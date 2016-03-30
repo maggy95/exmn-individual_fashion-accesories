@@ -1,0 +1,98 @@
+doctype html
+html
+  head
+    link(type='text/css', rel='stylesheet', href='assets/css/main.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway')
+
+    link(type='text/css', rel='stylesheet', href='assets/css/main.css')
+    link(type='text/css', rel='stylesheet', href='assets/css/bootstrap.min.css')
+
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    title Fashion-Accessories
+  body
+   include header
+   include footer
+   include views/mixins
+   include views/variables
+
+    section.subheader
+      .container
+        div.col-md-4
+          i.fa.fa-clock-o
+          div.time
+            h4 OPENING TIME
+            p 9.00 AM - 10.00 PM
+        div.col-md-4
+          a(href='#')
+                    img(src='assets/images/logo.png')
+        div.col-md-4 
+          div.search  
+            p search 
+              i.fa.fa-search.pull-right 
+    section.menu 
+      .container
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='index.html')
+                  p HOME              
+              li
+                a(href='contact.html')
+                  p CONTACT US
+
+            div.cart.pull-right
+              i.fa.fa-shopping-cart
+                a My Cart
+              p 2 item(s) - $244.00
+    section.carousel
+        #myCarousel.carousel.slide(data-ride='carousel')
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='assets/images/slider1.jpg')
+            .item
+              img(src='assets/images/slider2.jpg')
+          a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+          a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+    section.collection
+      .container
+        div.col-md-4
+          img(src='assets/images/banner1.jpg')
+        div.col-md-8      
+          img(src='assets/images/banner2.jpg')
+
+    section.latest
+      .container  
+        div.col-md-4
+          div.line
+        div.col-md-4
+          div.type
+            i.fa.fa-chevron-left
+            ul 
+              li
+                a(href='contact.html')
+                  p LATEST
+              li
+                a(href='contact.html')
+                  p BESTSELLER
+              li
+                a(href='contact.html')
+                  p SALE
+            i.fa.fa-chevron-right
+        div.col-md-4
+          div.line
+    section.categories
+      div.col-md-3
+        div.model
+          +col('col1')
+      div.col-md-3
+        div.model
+          +col('col2')
+      div.col-md-3
+        div.model
+          +col('col3')
+      div.col-md-3
+        div.model
+          +col('col4')
+    script(src='assets/js/jquery.js')
+    script(src='assets/js/bootstrap.min.js') 
+  

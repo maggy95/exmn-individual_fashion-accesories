@@ -1,0 +1,68 @@
+include variables
+
+mixin div
+  div.new
+    p NEW
+
+mixin div1
+  div.sale
+    p SALE
+
+mixin social
+  h4= wide	
+  .social
+            a
+                i.fa.fa-star
+            a
+                i.fa.fa-star
+            a
+                i.fa.fa-star
+            a
+                i.fa.fa-star-o
+            a
+                i.fa.fa-star-o
+mixin icon(call)
+    case call
+        when 'first'
+            a(href='#')
+                img.img(src='assets/images/flag1.png')
+                |&nbsp;&nbsp; Language 
+                i.fa.fa-caret-down
+        when 'second'
+            a(href='#')
+                $ Currency  
+                i.fa.fa-caret-down
+        when 'third'
+            a(href='#')
+                i.fa.fa-user 
+                |&nbsp;&nbsp; My Account
+                i.fa.fa-caret-down
+
+mixin col(call)
+    case call
+        when 'col1'
+            img(src='assets/images/a1.jpg')
+            +div
+            +social
+            $218.00
+        when 'col2'
+            img(src='assets/images/b1.jpg')
+            +div1
+            +div
+            +social
+            del $242.00 
+            &nbsp;&nbsp;&nbsp; $218.00 
+        when 'col3'
+            img(src='assets/images/c1.jpg')
+            +div1
+            +social
+            del $242.00 
+            &nbsp;&nbsp;&nbsp; $218.00
+        when 'col4'
+            img(src='assets/images/d1.jpg')
+            +div
+            +social
+            $218.00
+
+
+                   

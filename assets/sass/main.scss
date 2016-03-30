@@ -1,0 +1,71 @@
+@import "_reset.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+.carousel{
+	position: relative;
+	}
+.carousel img{
+	min-height:300px;
+	background-size: cover;
+}
+body{
+	header{
+		.navbar-inverse{
+			background: #EEEEEE;
+			border: white;
+			.navbar-header{
+				margin-left: 5%;
+			}
+			.nav{
+				.img{
+					padding-right: 2%;
+				}
+			}
+		}
+	}
+	.menu{
+		background:#EEEEEE;
+		.cart{
+			background: black;
+			color: white;
+		} 
+	}
+	.collection{
+		padding-top:3%;
+		padding: 2%; 
+	}
+	.latest{
+		.line{
+			padding: 2%;
+			background: white;
+			border: 1px solid #EEEEEE;
+		}
+		ul{
+			display: inline-flex;
+			li{
+				padding: 3%;
+			}
+		}
+	}
+	.categories{
+		img{
+			padding: 1%;
+			background-color: white;
+			border: 1 px solid #EEEEEE;
+		}
+		.new{
+			position: absolute;
+			padding: 2%;
+			background-color: red;
+			top: 18%;
+		}
+		.sale{
+			position: absolute;
+			padding: 2%;
+			background-color: black;
+			color: white;
+			top: 6%;
+		}
+	}
+}
